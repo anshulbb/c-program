@@ -1,0 +1,19 @@
+// C program whether the number is a prime or composite
+#include<stdio.h>
+int main()
+{
+    int i14,n14,c14=0;
+    printf ("Enter a number n= ");
+    scanf ("%d",&n14);
+    for (i14=1;i14<=n14;i14++)
+    {
+        if(n14%i14==0)
+        c14=c14+1;
+    }
+    if (c14==2)
+    printf ("The number is PRIME");
+    else
+    printf ("The number is COMPOSITE");
+    return 0;
+    
+}
