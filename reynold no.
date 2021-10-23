@@ -1,0 +1,33 @@
+// C program to find the type of flow based on reynold number
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+    int dia14;
+    float dens14,vel14,visc14,Re14;
+    
+    printf("Density of fluid=");
+    scanf("%f", &dens14);
+    printf("Velocity of fluid=");
+    scanf("%f", &vel14);
+    printf("Diameter of fluid=");
+    scanf("%d", &dia14);
+    printf("Viscosity of fluid=");
+    scanf("%f", &visc14);
+    
+    Re14=dens14*vel14*dia14/1000*visc14;
+    printf("\n Reynolds number value is %f",Re14);
+    if(Re14<=2200)
+    {
+        printf("the flow is laminar");
+    }
+    else if (Re14>2200 && Re14<=40000)
+    {
+        printf("the flow is transition");
+    }
+    else
+    {
+        printf("the flow is turbulent");
+    }
+    return 0;
+}
