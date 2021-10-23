@@ -1,0 +1,35 @@
+// C program to perform conversion of units
+#include<stdio.h>
+int main()
+{
+    char choice14;
+    float L14,rl14;
+    printf("\nEnter your choice=\n a for mm to inches \n b for inches to mm \n c for mmto ft \n d for bft mm");
+    scanf("%c",&choice14);
+    switch(choice14)
+    {
+        case 'a': printf("Enter length in mm");
+                  scanf("%f",&L14);
+                  rl14=L14/25.4;
+                  printf("\n %f mm= %f inches",L14,rl14);
+                  break;
+        case 'b':  printf("Enter length in inches");
+                  scanf("%f",&L14);
+                  rl14=L14*25.4;
+                  printf("\n %f inches= %f mm",L14,rl14);
+                  break;
+        case 'c':  printf("Enter length in mm");
+                  scanf("%f",&L14);
+                  rl14=L14*12*25.4;
+                  printf("\n %f mm= %f ft",L14,rl14);
+                  break;
+        case 'd':  printf("Enter length in ft");
+                  scanf("%f",&L14);
+                  rl14=L14*12*25.4;
+                  printf("\n %f ft= %f mm",L14,rl14);
+                  break;     
+        default : printf("\n wrong choice is enter \n enter correct");
+                  break;
+    }
+}
+                  
